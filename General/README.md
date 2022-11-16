@@ -7,3 +7,35 @@ ssh-keygen -t ed25519 -a 100 -c <email address>
 # setup a strong passphrase
 ```
 
+## Git configuration
+```
+git config --global user.name "<name>"
+git config --global user.email "<email>"
+git config --global core.pager "less -F"
+```
+
+## GPG Signing
+gpg needs to be installed. For example for MacOS, install using:
+```
+brew install gnupg
+```
+Generate or import an existing key:
+```
+gpg --full-generate-key
+# OR
+gpg --import /path/to/secret.asc
+```
+Then configure git to use it:
+```
+gpg --list-secret-keys --keyid-format=long
+# copy the key id from the 'sec' line
+# sec   ed25519/ABAABBAABBAABBAA
+git config --global user.signingkey ABAABBAABBAABBAA
+git config --global commit.gpgsign true
+git config --global gpg.program gpg
+```
+Export GPG key for adding to servers
+```
+gpg --armor --export ABAABBAABBAABBAA
+```
+
