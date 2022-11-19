@@ -29,7 +29,7 @@
 - [Starship Prompt](https://starship.rs/guide/#%F0%9F%9A%80-installation)
     ```
     curl -sS https://starship.rs/install.sh | sh
-    echo "eval "$(starship init zsh)" >> ~/.zshrc
+    echo "eval $(starship init zsh)" >> ~/.zshrc
     sed -I '' 's/^ZSH_THEME/# ZSH_THEME/' .zshrc
     mkdir -p ~/.config && touch ~/.config/starship.toml
     starship preset pure-preset > ~/.config/starship.toml
