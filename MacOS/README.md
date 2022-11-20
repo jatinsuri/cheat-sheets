@@ -42,5 +42,7 @@
     ```
     brew install gpg-suite
     ```
+    Under GPG Suite settings, make sure that "Store in macOS KeyChain" is not selected and, if it ever was, then delete the existing stored password.
+    
 
     
