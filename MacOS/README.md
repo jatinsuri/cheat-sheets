@@ -38,4 +38,9 @@
 
     Further customizations using reference starship.toml and starship.zsh files.
 
+- [GPG Suite](https://gpgtools.org/)
+    ```
+    brew install gpg-suite
+    ```
+
     

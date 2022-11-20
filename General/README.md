@@ -11,13 +11,13 @@ ssh-keygen -t ed25519 -a 100 -c <email address>
 ```
 git config --global user.name "<name>"
 git config --global user.email "<email>"
-git config --global core.pager "less -F"
+git config --global core.pager "less -XF"
 ```
 
 ## GPG Signing
 gpg needs to be installed. For example for MacOS, install using:
 ```
-brew install gnupg
+brew install gpg-suite
 ```
 Generate or import an existing key:
 ```
