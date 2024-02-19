@@ -53,4 +53,8 @@ Temporary Items
 .history
 .ionide
 
+### Obsidian ###
+# config dir
+.obsidian/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
